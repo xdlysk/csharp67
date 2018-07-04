@@ -34,6 +34,12 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.4.0\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,11 +48,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="6\AutopropertiesAndImmutability.cs" />
+    <Compile Include="6\ExceptionFilters.cs" />
+    <Compile Include="6\ExpressionBodiedMembers.cs" />
+    <Compile Include="6\ImportOfStaticMembers.cs" />
+    <Compile Include="6\IndexInitializers.cs" />
+    <Compile Include="6\NameOf.cs" />
+    <Compile Include="6\NullabilityNullConditionalOperators.cs" />
+    <Compile Include="7\AsyncReturnsExceptions.cs" />
+    <Compile Include="7\EnhancedTuples.cs" />
+    <Compile Include="7\GeneralizedAsyncReturnTypes.cs" />
+    <Compile Include="7\LocalFunctions.cs" />
+    <Compile Include="7\MoreExpressionBodies.cs" />
+    <Compile Include="7\NumericLiteralSyntax.cs" />
+    <Compile Include="7\OutVariables.cs" />
+    <Compile Include="7\PatternMatching.cs" />
+    <Compile Include="6\AwaitInCatchAndFinally.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="6\StringInterpolation.cs" />
+    <Compile Include="7\RefReturns.cs" />
+    <Compile Include="7\ThrowExpressions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
