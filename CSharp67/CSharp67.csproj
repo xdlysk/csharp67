@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,6 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,13 +53,23 @@
     <Compile Include="6\AutopropertiesAndImmutability.cs" />
     <Compile Include="6\ExceptionFilters.cs" />
     <Compile Include="6\ExpressionBodiedMembers.cs" />
+    <Compile Include="6\ExtensionAddMethodsInCollectionInitializers.cs" />
     <Compile Include="6\ImportOfStaticMembers.cs" />
+    <Compile Include="6\ImprovedOverloadResolution.cs" />
     <Compile Include="6\IndexInitializers.cs" />
     <Compile Include="6\NameOf.cs" />
     <Compile Include="6\NullabilityNullConditionalOperators.cs" />
+    <Compile Include="7.1\AsyncMain.cs" />
+    <Compile Include="7.1\DefaultLiteralExpressions.cs" />
+    <Compile Include="7.1\InferredTupleElementNames.cs" />
+    <Compile Include="7.2\PrivateProtectedAccessModifier.cs" />
+    <Compile Include="7.3\AttachAttributesToTheBackingFields.cs" />
+    <Compile Include="7.3\InMethodOverloadResolutionTiebreaker.cs" />
     <Compile Include="7\AsyncReturnsExceptions.cs" />
+    <Compile Include="7\Discards.cs" />
     <Compile Include="7\EnhancedTuples.cs" />
     <Compile Include="7\GeneralizedAsyncReturnTypes.cs" />
+    <Compile Include="7\IsExpression.cs" />
     <Compile Include="7\LocalFunctions.cs" />
     <Compile Include="7\MoreExpressionBodies.cs" />
     <Compile Include="7\NumericLiteralSyntax.cs" />
@@ -74,5 +86,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
